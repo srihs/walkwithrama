@@ -54,10 +54,23 @@ export default function Footer() {
           </div>
         </Reveal>
 
-        <p className="mt-20 border-t border-navy/10 pt-8 font-mono text-xs uppercase tracking-widest text-navy/50">
-          © {new Date().getFullYear()} Ramesh Rushantha Silva · Narahenpita →
-          the open ocean
-        </p>
+        <div className="mt-20 flex flex-col items-center justify-between gap-3 border-t border-navy/10 pt-8 sm:flex-row">
+          <p className="font-mono text-xs uppercase tracking-widest text-navy/50">
+            © {new Date().getFullYear()} Ramesh Rushantha Silva · Narahenpita
+            → the open ocean
+          </p>
+          <p className="text-xs text-navy/50">
+            Site by{" "}
+            <a
+              href="https://www.axtelia.xyz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-navy/70 transition-colors hover:text-navy"
+            >
+              Axtelia
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
