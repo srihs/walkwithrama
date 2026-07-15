@@ -70,9 +70,9 @@ export default function Origin() {
             <TiltCard max={5} className="relative mx-auto w-full max-w-sm md:max-w-none">
               <Image
                 src="/portrait.jpg"
-                width={1440}
-                height={1440}
-                alt="Black-and-white portrait of Ramesh on a beach"
+                width={373}
+                height={373}
+                alt="Portrait of Ramesh"
                 sizes="(max-width: 768px) 90vw, 40vw"
                 className="w-full rounded-3xl border border-foam/10 object-cover"
               />
