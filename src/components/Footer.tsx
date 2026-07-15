@@ -1,7 +1,7 @@
-"use client";
+﻿"use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { Anchor, Youtube, Globe, ArrowUpRight } from "lucide-react";
+import { Anchor, Youtube, Globe, ArrowUpRight, Facebook, Linkedin } from "lucide-react";
 import Reveal from "./Reveal";
 
 export default function Footer() {
@@ -33,23 +33,50 @@ export default function Footer() {
         <Reveal delay={0.15}>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://rameshsilva.com"
+              href="https://en.wikipedia.org/wiki/Ramesh_Rushantha"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-full bg-navy px-7 py-3 font-semibold text-ice transition-transform duration-200 hover:scale-105"
+              className="inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-full bg-navy px-7 py-3 font-semibold text-ice transition-[transform,background-color,color] duration-200 hover:scale-105 hover:bg-accent hover:text-navy"
             >
               <Globe className="size-5" aria-hidden />
-              rameshsilva.com
+              Wikipedia
               <ArrowUpRight className="size-4" aria-hidden />
             </a>
             <a
               href="https://www.youtube.com/@WalkWithRAMA"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-full bg-accent px-7 py-3 font-semibold text-navy transition-transform duration-200 hover:scale-105"
+              className="inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-full bg-navy px-7 py-3 font-semibold text-ice transition-[transform,background-color,color] duration-200 hover:scale-105 hover:bg-accent hover:text-navy"
             >
               <Youtube className="size-5" aria-hidden />
               Walk With RAMA
+            </a>
+            <a
+              href="https://www.facebook.com/rameshrushanthasilva"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-full bg-navy px-7 py-3 font-semibold text-ice transition-[transform,background-color,color] duration-200 hover:scale-105 hover:bg-accent hover:text-navy"
+            >
+              <Facebook className="size-5" aria-hidden />
+              Fan Page
+            </a>
+            <a
+              href="https://www.facebook.com/ramesh.r.silva"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-full bg-navy px-7 py-3 font-semibold text-ice transition-[transform,background-color,color] duration-200 hover:scale-105 hover:bg-accent hover:text-navy"
+            >
+              <Facebook className="size-5" aria-hidden />
+              Profile
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ramesh-rushantha-silva-32a811220/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-full bg-navy px-7 py-3 font-semibold text-ice transition-[transform,background-color,color] duration-200 hover:scale-105 hover:bg-accent hover:text-navy"
+            >
+              <Linkedin className="size-5" aria-hidden />
+              LinkedIn
             </a>
           </div>
         </Reveal>

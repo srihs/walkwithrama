@@ -12,12 +12,12 @@ import { ArrowRight, ChevronDown, Waves } from "lucide-react";
 import Badge from "./Badge";
 import ScrambleText from "./ScrambleText";
 
-const NAME = "Ramesh Rushantha";
+const NAME = "Ramesh Rushantha Silva";
 const ROLES = [
-  "Superyacht Bosun",
+  "Merchant Mariner  - Super Yacht Industry",
   "Travel Vlogger",
-  "Water Sports Instructor",
-  "Musician",
+  "Jetskii Instructor",
+  "Percussionist",
 ];
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -128,7 +128,7 @@ export default function Hero() {
             transition={{ delay: 1.2, duration: 0.8 }}
             className="mt-6 max-w-xl text-balance leading-relaxed text-mist"
           >
-            From Narahenpita to the open ocean: twenty-five years of stage
+            From Colombo 05 to the open ocean: twenty five years of stage
             lights, ship decks and stories worth telling.
           </motion.p>
 
@@ -169,7 +169,7 @@ export default function Hero() {
           </span>
           <div>
             <p className="font-display text-2xl font-bold leading-none text-navy">
-              25+ years
+              20+ years
             </p>
             <p className="mt-1 text-sm text-navy/60">at sea and on stage</p>
           </div>

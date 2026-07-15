@@ -56,8 +56,8 @@ export default function Origin() {
             <Badge>
               <ScrambleText text="Chapter 01 - Origin" />
             </Badge>
-            <h2 className="mt-6 font-display text-4xl font-bold tracking-tight md:text-6xl">
-              Narahenpita, 30 March 1983
+            <h2 className="mt-6 font-display text-3xl font-bold tracking-tight md:text-6xl">
+              Colombo 05, <br />Sri Lanka <br /> 30 March 1983
             </h2>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-mist">
               The eldest child of the family, raised on schoolyard rugby and
