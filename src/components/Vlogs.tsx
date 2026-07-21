@@ -39,32 +39,32 @@ const PLAYLISTS = [
 
 const VIDEOS = [
   {
-    id: "yv6vehOMXI4",
-    title: "Deep Dive Dubai",
-    tag: "The world's deepest dive pool",
+    id: "xp8ZLPp5h5g",
+    title: "13,000 Feet Sky Dive",
+    tag: "Dubai from above",
     span: "md:col-span-2 md:row-span-2",
     thumb: "maxresdefault",
   },
   {
-    id: "JltuXzl1pg0",
-    title: "Sea-Doo Speedster",
-    tag: "Water sports in Sri Lanka",
+    id: "yv6vehOMXI4",
+    title: "Deep Dive Dubai",
+    tag: "The world's deepest dive pool",
     span: "",
     thumb: "maxresdefault",
   },
   {
-    id: "hwXLwZSUzjY",
-    title: "A Yacht Marina for Sri Lanka?",
-    tag: "Yacht life, episode 1",
+    id: "6iIIQzg5SP4",
+    title: "Colosseum, Rome",
+    tag: "Walking ancient streets",
     span: "",
-    thumb: "sddefault",
+    thumb: "maxresdefault",
   },
   {
-    id: "c-hQAmyqfKg",
-    title: "Ravana Cut, Swami Rock",
-    tag: "Dive sites of Sri Lanka",
+    id: "cJw1nwV-qcY",
+    title: "The Pyramids of Giza",
+    tag: "Egypt, part 1",
     span: "md:col-span-2",
-    thumb: "sddefault",
+    thumb: "maxresdefault",
   },
 ];
 
