@@ -41,7 +41,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-dvh flex-col justify-center overflow-hidden bg-abyss"
+      className="relative flex min-h-dvh flex-col justify-end overflow-hidden bg-abyss pb-24 pt-28 md:pb-28"
     >
       <video
         ref={videoRef}
@@ -107,7 +107,7 @@ export default function Hero() {
             })}
           </h1>
 
-          <div className="mt-4 h-8" aria-live="polite">
+          <div className="mt-3 h-8" aria-live="polite">
             <AnimatePresence mode="wait">
               <motion.p
                 key={role}
@@ -126,7 +126,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.8 }}
-            className="mt-6 max-w-xl text-balance leading-relaxed text-mist"
+            className="mt-4 max-w-xl text-balance leading-relaxed text-mist"
           >
             From Colombo 05 to the open ocean: twenty five years of stage
             lights, ship decks and stories worth telling.
@@ -136,7 +136,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.4, duration: 0.6, ease: EASE }}
-            className="mt-9 flex flex-wrap items-center gap-4"
+            className="mt-7 flex flex-wrap items-center gap-4"
           >
             <a
               href="#origin"
