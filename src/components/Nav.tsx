@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
-import { Anchor, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const LINKS = [
   { href: "#origin", label: "Origin" },
@@ -107,10 +107,9 @@ export default function Nav() {
         <nav className="flex items-center justify-between gap-6 px-6 py-3">
           <a
             href="#top"
-            className="flex items-center gap-2 font-display text-2xl font-bold text-navy"
+            className="whitespace-nowrap font-script text-2xl leading-none text-navy md:text-[1.7rem]"
           >
-            <Anchor className="size-5 text-accent" aria-hidden />
-            Rama.
+            Ramesh Rushantha Silva
           </a>
 
           <ul className="hidden items-center gap-7 md:flex">
@@ -119,7 +118,7 @@ export default function Nav() {
                 <ScrambleLink
                   href={link.href}
                   label={link.label}
-                  className="text-sm font-medium text-navy/70 transition-colors duration-200 hover:text-navy focus-visible:text-navy"
+                  className="whitespace-nowrap text-sm font-medium text-navy/70 transition-colors duration-200 hover:text-navy focus-visible:text-navy"
                 />
               </li>
             ))}

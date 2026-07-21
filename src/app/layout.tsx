@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Baloo_2, Inter, JetBrains_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+
+const brittany = localFont({
+  src: "../fonts/BrittanySignature.ttf",
+  variable: "--font-brittany",
+  display: "swap",
+});
 
 const baloo = Baloo_2({
   weight: ["500", "600", "700"],
@@ -38,7 +45,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${baloo.variable} ${inter.variable} ${jetbrains.variable} scroll-smooth`}
+      className={`${baloo.variable} ${inter.variable} ${jetbrains.variable} ${brittany.variable} scroll-smooth`}
     >
       <body className="antialiased">
         {children}
