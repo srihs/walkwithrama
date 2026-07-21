@@ -41,7 +41,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-dvh flex-col justify-end overflow-hidden bg-abyss pb-24 pt-28 md:pb-28"
+      className="relative flex min-h-dvh flex-col justify-end overflow-hidden bg-abyss pb-16 pt-28 md:pb-16"
     >
       <video
         ref={videoRef}
