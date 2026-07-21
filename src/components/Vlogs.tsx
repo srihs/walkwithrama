@@ -1,13 +1,41 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { Play, Youtube } from "lucide-react";
+import { Play, Youtube, ListVideo } from "lucide-react";
 import Reveal from "./Reveal";
 import ScrambleText from "./ScrambleText";
 import Badge from "./Badge";
 
 const CHANNEL = "https://www.youtube.com/@WalkWithRAMA";
 const EASE = [0.22, 1, 0.36, 1] as const;
+
+const PLAYLISTS = [
+  {
+    id: "PLHZkOIX1I3m6D2VhKAkA2PiWQKgRaaV4k",
+    title: "Travel Around The World",
+    thumb: "xp8ZLPp5h5g",
+  },
+  {
+    id: "PLHZkOIX1I3m7MUF4ov_bAq0sM6ynYVPJz",
+    title: "New Gadgets & Water Sports",
+    thumb: "dCtsMbQNHb4",
+  },
+  {
+    id: "PLHZkOIX1I3m4TcyI5AuEaWWkBlGta0snf",
+    title: "About Ramesh Rushantha Silva",
+    thumb: "MDVXUl81Ncw",
+  },
+  {
+    id: "PLHZkOIX1I3m4YYwcSuiJNx-Au2xr1crU1",
+    title: "Beautiful Lanka",
+    thumb: "Ae-i6Wybo-w",
+  },
+  {
+    id: "PLHZkOIX1I3m4CR7IMboJfXcBEGprwpvTX",
+    title: "Specials for Sri Lankans",
+    thumb: "LdeqXMY8P5U",
+  },
+];
 
 const VIDEOS = [
   {
@@ -80,11 +108,25 @@ export default function Vlogs() {
           <h2 className="mt-6 font-display text-4xl font-bold tracking-tight md:text-6xl">
             Stories from the water
           </h2>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-mist">
-            Travel and water sports, filmed where the work happens, and a
-            standing case that Sri Lanka&apos;s coasts belong on the
-            world&apos;s water-sports map.
-          </p>
+          <div className="mt-6 max-w-2xl space-y-4 leading-relaxed text-mist">
+            <p>
+              Since leaving Sri Lanka in 2005, the journey has spanned the
+              world, with professional training in modern water sports and
+              adventure activities.
+            </p>
+            <p>
+              Filmed where the action happens, these stories capture
+              unforgettable experiences on the water while showcasing the
+              innovation, excitement and beauty of modern water sports. They
+              also demonstrate why Sri Lanka&apos;s spectacular coastline
+              deserves recognition as one of the world&apos;s premier water
+              sports destinations.
+            </p>
+            <p>
+              Created to inspire, educate and encourage more Sri Lankans to
+              discover the endless opportunities the ocean has to offer.
+            </p>
+          </div>
         </Reveal>
 
         <motion.div
@@ -131,6 +173,41 @@ export default function Vlogs() {
             </motion.div>
           ))}
         </motion.div>
+
+        <Reveal delay={0.1}>
+          <h3 className="mt-16 font-display text-2xl font-bold tracking-tight">
+            Playlists
+          </h3>
+        </Reveal>
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+          {PLAYLISTS.map((playlist, i) => (
+            <Reveal key={playlist.id} delay={i * 0.06}>
+              <a
+                href={`https://youtube.com/playlist?list=${playlist.id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block overflow-hidden rounded-xl border border-foam/10 bg-abyss transition-colors duration-300 hover:border-accent/60"
+              >
+                <div className="relative overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={`https://i.ytimg.com/vi/${playlist.thumb}/hqdefault.jpg`}
+                    alt=""
+                    loading="lazy"
+                    className="aspect-video w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                  />
+                  <span className="absolute bottom-2 right-2 inline-flex items-center gap-1.5 rounded-md bg-abyss/85 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-foam">
+                    <ListVideo className="size-3 text-accent" aria-hidden />
+                    Playlist
+                  </span>
+                </div>
+                <p className="p-3 text-sm font-semibold leading-snug">
+                  {playlist.title}
+                </p>
+              </a>
+            </Reveal>
+          ))}
+        </div>
 
         <Reveal delay={0.2}>
           <a

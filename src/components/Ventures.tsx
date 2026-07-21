@@ -39,7 +39,7 @@ export default function Ventures() {
       <div className="mx-auto max-w-6xl px-6">
         <Reveal>
           <Badge>
-            <ScrambleText text="Chapter 05 - Back to Shore" />
+            <ScrambleText text="Chapter 06 - Back to Shore" />
           </Badge>
           <h2 className="mt-6 font-display text-4xl font-bold tracking-tight md:text-6xl">
             Ventures & advocacy

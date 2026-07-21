@@ -6,6 +6,7 @@ import Origin from "@/components/Origin";
 import Music from "@/components/Music";
 import Sea from "@/components/Sea";
 import Vlogs from "@/components/Vlogs";
+import Training from "@/components/Training";
 import Stats from "@/components/Stats";
 import Gallery from "@/components/Gallery";
 import Ventures from "@/components/Ventures";
@@ -22,6 +23,7 @@ export default function Home() {
         <Music />
         <Sea />
         <Vlogs />
+        <Training />
         <Stats />
         <Gallery />
         <Ventures />

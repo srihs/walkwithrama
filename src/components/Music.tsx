@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { Music2, Disc3, Mic2 } from "lucide-react";
+import { Music2, Mic2 } from "lucide-react";
 import Reveal from "./Reveal";
 import ScrambleText from "./ScrambleText";
 import Badge from "./Badge";
@@ -14,22 +14,10 @@ const TIMELINE = [
     icon: Music2,
   },
   {
-    year: "2000",
-    title: "“Sri Lankan Mix”",
-    body: "The breakout song that put the band on the map.",
-    icon: Disc3,
-  },
-  {
     year: "2002",
     title: "Animal Farm & TNL Onstage",
     body: "Backing band for the stage play Animal Farm; finalists at TNL Onstage.",
     icon: Mic2,
-  },
-  {
-    year: "2010",
-    title: "Kreators Reborn",
-    body: "The band reforms in 2009 and releases the comeback album a year later.",
-    icon: Disc3,
   },
 ];
 
