@@ -83,7 +83,7 @@ export default function Footer() {
 
         <div className="mt-20 flex flex-col items-center justify-between gap-3 border-t border-navy/10 pt-8 sm:flex-row">
           <p className="font-mono text-xs uppercase tracking-widest text-navy/50">
-            © {new Date().getFullYear()} Ramesh Rushantha Silva · Narahenpita
+            © {new Date().getFullYear()} Ramesh Rushantha Silva · Colombo 05
             → the open ocean
           </p>
           <p className="text-xs text-navy/50">

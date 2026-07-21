@@ -24,10 +24,10 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Ramesh Rushantha Silva | Walk With RAMA",
   description:
-    "From Narahenpita to the open ocean. Travel vlogger, superyacht bosun, water sports instructor and musician. The story of Ramesh Rushantha Silva.",
+    "From Colombo 05 to the open ocean. Travel vlogger, superyacht bosun, water sports instructor and musician. The story of Ramesh Rushantha Silva.",
   openGraph: {
     title: "Ramesh Rushantha Silva | Walk With RAMA",
-    description: "From Narahenpita to the open ocean.",
+    description: "From Colombo 05 to the open ocean.",
     type: "website",
   },
 };

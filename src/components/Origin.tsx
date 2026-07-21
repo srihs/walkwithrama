@@ -89,7 +89,7 @@ export default function Origin() {
               />
               <span className="absolute -bottom-4 left-6 inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-navy shadow-lg shadow-abyss/40">
                 <MapPin className="size-4" aria-hidden />
-                Narahenpita, Sri Lanka
+                Colombo 05, Sri Lanka
               </span>
             </TiltCard>
           </Reveal>
