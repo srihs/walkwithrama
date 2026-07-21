@@ -67,14 +67,15 @@ export default function Hero() {
         style={{ y: textY, opacity: fade }}
         className="relative z-10 mx-auto w-full max-w-6xl px-6"
       >
-        <div className="max-w-3xl">
-          <Badge>
-            <ScrambleText text="Welcome aboard - Walk With RAMA" />
-          </Badge>
+        <Badge>
+          <ScrambleText text="Welcome aboard - Walk With RAMA" />
+        </Badge>
 
+        <div className="mt-6 flex items-start justify-between gap-10">
+          <div>
           <h1
             aria-label={NAME}
-            className="mt-8 font-display text-[clamp(3rem,9vw,6.5rem)] font-bold leading-[1.05] tracking-tight"
+            className="font-display text-[clamp(2.2rem,5vw,4.6rem)] font-bold leading-tight tracking-tight md:whitespace-nowrap"
           >
             {NAME.split(" ").map((word, w, words) => {
               const offset = words
@@ -153,26 +154,27 @@ export default function Hero() {
               <ArrowRight className="size-4" aria-hidden />
             </a>
           </motion.div>
-        </div>
-      </motion.div>
-
-      {/* floating glass stat card */}
-      <motion.div
-        initial={{ opacity: 0, y: 24 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.8, duration: 0.7, ease: EASE }}
-        className="absolute bottom-24 right-10 z-10 hidden rounded-3xl bg-ice p-6 shadow-xl shadow-abyss/30 lg:block"
-      >
-        <div className="flex items-center gap-3">
-          <span className="flex size-12 items-center justify-center rounded-xl bg-accent">
-            <Waves className="size-6 text-navy" aria-hidden />
-          </span>
-          <div>
-            <p className="font-display text-2xl font-bold leading-none text-navy">
-              20+ years
-            </p>
-            <p className="mt-1 text-sm text-navy/60">at sea and on stage</p>
           </div>
+
+          {/* stat card, top-aligned with the name */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.8, duration: 0.7, ease: EASE }}
+            className="hidden shrink-0 rounded-3xl bg-ice p-6 shadow-xl shadow-abyss/30 lg:block"
+          >
+            <div className="flex items-center gap-3">
+              <span className="flex size-12 items-center justify-center rounded-xl bg-accent">
+                <Waves className="size-6 text-navy" aria-hidden />
+              </span>
+              <div>
+                <p className="font-display text-2xl font-bold leading-none text-navy">
+                  20+ years
+                </p>
+                <p className="mt-1 text-sm text-navy/60">at sea and on stage</p>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </motion.div>
 
