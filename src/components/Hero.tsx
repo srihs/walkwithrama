@@ -71,8 +71,7 @@ export default function Hero() {
           <ScrambleText text="Welcome aboard - Walk With RAMA" />
         </Badge>
 
-        <div className="mt-6 flex items-start justify-between gap-10">
-          <div>
+        <div>
           <h1
             aria-label={NAME}
             className="font-display text-[clamp(2.2rem,5vw,4.6rem)] font-bold leading-tight tracking-tight md:whitespace-nowrap"
@@ -133,48 +132,49 @@ export default function Hero() {
             lights, ship decks and stories worth telling.
           </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.4, duration: 0.6, ease: EASE }}
-            className="mt-7 flex flex-wrap items-center gap-4"
-          >
-            <a
-              href="#origin"
-              className="inline-flex min-h-11 items-center gap-2 rounded-full bg-ice px-7 py-3 font-semibold text-navy transition-transform duration-200 hover:scale-105"
+          <div className="mt-8 flex flex-wrap items-end justify-between gap-6">
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.4, duration: 0.6, ease: EASE }}
+              className="flex flex-wrap items-center gap-4"
             >
-              Explore the Journey
-              <ArrowRight className="size-4" aria-hidden />
-            </a>
-            <a
-              href="#vlogs"
-              className="inline-flex min-h-11 items-center gap-2 rounded-full border border-foam/40 px-7 py-3 font-semibold text-foam backdrop-blur-sm transition-colors duration-200 hover:border-foam"
-            >
-              Watch the Vlogs
-              <ArrowRight className="size-4" aria-hidden />
-            </a>
-          </motion.div>
-          </div>
+              <a
+                href="#origin"
+                className="inline-flex min-h-11 items-center gap-2 rounded-full bg-ice px-7 py-3 font-semibold text-navy transition-transform duration-200 hover:scale-105"
+              >
+                Explore the Journey
+                <ArrowRight className="size-4" aria-hidden />
+              </a>
+              <a
+                href="#vlogs"
+                className="inline-flex min-h-11 items-center gap-2 rounded-full border border-foam/40 px-7 py-3 font-semibold text-foam backdrop-blur-sm transition-colors duration-200 hover:border-foam"
+              >
+                Watch the Vlogs
+                <ArrowRight className="size-4" aria-hidden />
+              </a>
+            </motion.div>
 
-          {/* stat card, top-aligned with the name */}
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.8, duration: 0.7, ease: EASE }}
-            className="hidden shrink-0 rounded-3xl bg-ice p-6 shadow-xl shadow-abyss/30 lg:block"
-          >
-            <div className="flex items-center gap-3">
-              <span className="flex size-12 items-center justify-center rounded-xl bg-accent">
-                <Waves className="size-6 text-navy" aria-hidden />
-              </span>
-              <div>
-                <p className="font-display text-2xl font-bold leading-none text-navy">
-                  20+ years
-                </p>
-                <p className="mt-1 text-sm text-navy/60">at sea and on stage</p>
+            {/* stat card, bottom-aligned with the buttons */}
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.8, duration: 0.7, ease: EASE }}
+              className="hidden shrink-0 rounded-3xl bg-ice p-6 shadow-xl shadow-abyss/30 lg:block"
+            >
+              <div className="flex items-center gap-3">
+                <span className="flex size-12 items-center justify-center rounded-xl bg-accent">
+                  <Waves className="size-6 text-navy" aria-hidden />
+                </span>
+                <div>
+                  <p className="font-display text-2xl font-bold leading-none text-navy">
+                    20+ years
+                  </p>
+                  <p className="mt-1 text-sm text-navy/60">at sea and on stage</p>
+                </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
       </motion.div>
 
